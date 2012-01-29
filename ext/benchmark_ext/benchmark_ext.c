@@ -46,6 +46,6 @@ VALUE bmm_realtime(VALUE obj)
 void Init_benchmark_ext() {
   rb_require("benchmark");
   bmm = rb_define_module("Benchmark");
-	rb_define_module_function(bmm, "timestamp", bmm_timestamp, 0);
-	rb_define_module_function(bmm, "realtime", bmm_realtime, 0);
+  rb_define_module_function(bmm, "timestamp", bmm_timestamp, 0);
+  rb_define_module_function(bmm, "realtime", bmm_realtime, 0);
 }
